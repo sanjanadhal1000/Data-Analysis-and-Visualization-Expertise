@@ -1,0 +1,15 @@
+For each situation, decide:
+
+one-sample t-test
+
+two-sample t-test
+
+paired t-test
+
+chi-square test
+
+a. Compare average exam scores of two different classes -> two-sample t-test
+b. Check if weekend vs weekday affects product purchases -> chi-square test
+c. Check if height changed after a 2-month training program -> paired t-test (dependent samples)
+d. Verify if average waiting time is 10 minutes -> one-sample t-test
+e. Check if dessert choice (cake/pie/ice cream) depends on gender -> chi-square test

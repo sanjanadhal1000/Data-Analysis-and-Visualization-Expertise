@@ -1,0 +1,9 @@
+Two major hypothesis testing techniques are:
+
+1. t-test: 
+
+    Used for comparing means.
+
+2. Chi-square test:
+
+    Used for checking the association between categorical variables.
