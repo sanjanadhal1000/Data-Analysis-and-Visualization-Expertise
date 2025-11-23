@@ -1,0 +1,17 @@
+---------------------------------------------
+Normal Distribution (Gaussian Distribution):
+---------------------------------------------
+
+- Symmetric and bell-shaped.
+- Mean = center of the curve.
+- Standard Deviation (σ)= width or spread
+- Most data lies near the mean.
+
+- 68-95-99.7 Rule:
+
+For a normal distribution,
+
+68% of data lies between mean ± 1σ.
+95% lies between mean ± 2σ.
+99.7% lies between mean ± 3σ.
+

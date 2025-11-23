@@ -1,0 +1,18 @@
+Q3. Decide which test to apply:
+
+> Compare mean height of men vs women → ?
+
+    Independent two-sample t-test 
+        * Comparing means of two Independent groups. (men != women)
+
+> Check whether average delivery time is 30 minutes → ?
+
+    One-sample t-test
+        * Comparing one sample mean against a known value (μ = 30)
+
+> Is the proportion of customers who click an ad > 20% → ?
+
+    One-sample Proportion z-Test
+        * Checking a proportion 
+        * Comparing sample proportion p to 0.20
+        * Direction is p > 0.20 (right-tailed)

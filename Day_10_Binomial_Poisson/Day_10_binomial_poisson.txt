@@ -1,0 +1,22 @@
+-----------------------
+Binomial Distribution:
+-----------------------
+
+Used when:
+- you repeat an experiment n times.
+- Each trial has only 2 outcomes - success or failure.
+- Success probability = p
+
+Example: Flipping a coin 10 times: how many heads?
+
+-----------------------
+Poisson Distribution:
+-----------------------
+
+Used when:
+- you count the no. of events happening in a fixed interval.
+- Events happen independently.
+- Average rate = λ (lambda).
+
+Example: Avg. 4 customers enter a shop per minute, how many customers will enter the shop today in 1000 minutes?
+

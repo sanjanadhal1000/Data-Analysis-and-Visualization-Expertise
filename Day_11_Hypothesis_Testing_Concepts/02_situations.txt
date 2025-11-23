@@ -1,0 +1,31 @@
+Q2. For the situations below, write H₀ and H₁
+
+> A nutrition bar company claims their bar has 10g protein. You suspect it has less.
+
+    H₀ (Null Hypothesis):
+        H₀ : μ = 10           (the average protein content is 10g)
+
+    H₁ (Alternative Hypothesis):
+        H₁ : μ < 10           (You suspect it has less than 10g protein)
+
+    This is a left-tailed test.
+
+> A teacher believes Class A and Class B perform equally well in maths.
+
+    H₀ : μA​ = μB (mean scores of class A and class B are equal)
+
+    H₁ : μA​ != μB​ (mean scores of class A and class B are not equal)
+
+    This is a two-tailed test.
+
+> A coin is suspected to be biased towards heads.
+
+    Biased towards heads -> probability of heads is more than 0.5
+
+    H₀ (Null Hypothesis):
+        H₀ : p = 0.5 (the coin is fair)
+
+    H₁ (Alternative Hypothesis):
+        H₁ : p > 0.5 (the coin gives heads more than expected - biased)
+
+    This is a right-tailed test.

@@ -1,0 +1,83 @@
+-------------------
+Hypothesis Testing:
+-------------------
+
+Statistical method to decide whether the results we are seeing is real or just a random chance.
+
+-------------------------
+1. Null Hypothesis (H₀):
+-------------------------
+
+- Statement that nothing has change/ no effect/ no difference.
+- Examples: 
+    > H₀: The average rating before and after an update is the same.
+    > H₀: Men and women have equal average salaries.
+    > H₀: A coin is fair (p = 0.5).
+
+-------------------------------------
+2. Alternative Hypothesis (H₁ / Ha):
+-------------------------------------
+
+- Statement that we want to test/prove.
+- Examples:
+    > Ha: The average rating has changed.
+    > Ha: Men and women have different salaries.
+    > Ha: The coin is not fair (p ≠ 0.5).
+
+----------------------------------
+3. Type I Error (False Positive):
+----------------------------------
+- Rejecting H₀, even though it is true.
+- Think of it as "YOU THOUGHT THERE WAS AN EFFECT, BUT ACTUALLY THERE WASN'T".
+- Example: A pregnancy test shows positive even though the person is not pregnant. 
+            (You falsely detected something that doesn't exist).
+
+----------------------------------
+4. Type II Error (False Negative):
+----------------------------------
+- Fail to reject H₀ even though it is false.
+- Think of it as "YOU MISSED THE EFFECT EVEN THOUGH IT WAS REAL".
+- Example: A pregnancy test shows negative even though the person is pregnant.
+            (You failed to detect something that actually exists).
+
+------------------------------------------------------
+|* Super Easy Memory Trick 🔥                        |
+|    Type I → I magine something that’s not there     |
+|    Type II → You’re T oo blind to see what’s there  |   
+-------------------------------------------------------
+
+---------------------------
+5. Significance Level (α):
+---------------------------
+
+- Threshold to reject H₀.
+- Common Values: 0.05, 0.01
+- Meaning of α: 0.05 -> Accepting a 5% chance of being wrong when rejecting H₀
+
+------------
+6. p-value:
+------------
+
+- How likely the observed result is, assuming H₀ is true.
+    - Small p-value (<α): result is too likely under H₀ (reject H₀)
+    - Large p-value (>α): result is plausible under H₀ (failed to reject H₀)
+
+- Examples:
+    p = 0.02 with α = 0.05 → reject H₀
+    p = 0.21 → fail to reject H₀
+
+---------------------------------------
+7. Basic Hypothesis Testing Procedure:
+---------------------------------------
+
+- State H₀ and Ha
+- Choose significance level α
+- Compute test statistic from data
+- Compute p-value
+- Compare p-value with α → conclude
+
+
+
+
+
+
