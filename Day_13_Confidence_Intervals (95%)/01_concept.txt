@@ -1,0 +1,35 @@
+Confidence Intervals helps us estimate a range of values for a population parameter (like mean).
+
+A 95% CI -> If we repeat the experiment many times, 95% of the intervals will contain true mean.
+
+-----------------------------------
+1. 95% CI Formula (t-distribution)
+-----------------------------------
+
+    Used when sample size is small (n < 30).
+
+    For a sample,
+
+        mean = 𝑥(bar)
+        std dev = s
+        sample size = n
+        standard error = SE = s/(n**0.5)
+        critical value = tα/2,df=n−1​
+
+    | -------------------------|
+    |  CI = x(bar) ± tα/2 (SE) |
+    | -------------------------|
+
+--------------------------
+Compute 95% CI with Scipy
+--------------------------
+    Example Dataset:
+    
+        import numpy as np
+        from scipy import stats
+
+        data = np.array([52, 55, 50, 53, 54, 56])
+        n = len(data)
+        mean = np.mean(data)
+        std = np.std(data, ddof=1)  # sample std
+
