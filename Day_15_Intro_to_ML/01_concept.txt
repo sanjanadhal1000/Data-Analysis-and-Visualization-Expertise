@@ -1,0 +1,100 @@
+ML is a field of AI  where computer learns patterns from data without being explicitly programmed.
+
+-------------
+Types of ML:
+-------------
+
+------------------------
+1. Supervised Learning:
+------------------------
+
+    > Dataset contains Input Features (X) and Output/Target labels (Y).
+    > Model learns from labeled data.
+    > Examples: 
+        - Predicting house prices (Regression)
+        - Classifying an email as spam/not (Classification)
+        - Predicting customer churn (Classification)
+        - Predicting rainfall amount (Regression)
+
+    .............
+    > Two types: 
+    .............
+
+        ..............
+        - Regression: 
+        ..............
+
+            - Predicts continuous numeric values.
+            - Examples: Predict temperature, Predict stock prices, Predict salary.
+
+        ..................
+        - Classification:
+        ..................
+
+            - Predicts categories/classes.
+            - Examples: Yes/No, Female/Male, Disease/No Disease, Image: Cat/Dog
+
+--------------------------
+2. Unsupervised Learning:
+--------------------------
+
+    > Dataset contains only Input Features (X), not labels (Y).
+    > Goal: Find Hidden Patterns in data.
+
+    .............
+    > Two Types:
+    .............
+
+        ..............
+        - Clustering:
+        ..............
+
+            - Group similar items together.
+            - Examples: Customer segmentation, Grouping users by behavior, Market Segmentation.
+            - Algorithm Examples: K-Means, Hierarchical Clustering.
+
+        ............................
+        - Dimensionality Reduction:
+        ............................
+
+            - Reduce the no. of imput features while keeping important information.
+            - Examples: Principal Component Analysis (PCA), Used for Visualization, Speeds up ML models.
+
+---------------------------------------------------
+Comparison of Supervised and Unsupervised Learning:
+---------------------------------------------------
+
+    | Feature    | Supervised Learning                   | Unsupervised Learning   |
+    | ---------- | ------------------------------------- | ----------------------- |
+    | Labels     | Yes (y)                               | No labels               |
+    | Goal       | Predict output                        | Find structure/patterns |
+    | Examples   | Regression, Classification            | Clustering, PCA         |
+    | Algorithms | Linear Regression, SVM, Random Forest | K-Means, DBSCAN, PCA    |
+
+------------------------------------------------
+Why Watch Regression & Classification Overview?
+------------------------------------------------
+
+    ............
+    Regression:
+    ............
+
+        Linear Regression
+
+        Predicts numeric outcomes
+
+        Used in price prediction
+
+    ................
+    Classification:
+    ................
+
+        Logistic Regression
+
+        KNN
+
+        Decision Trees
+
+        Used in "Yes/No" type situations
+
+
