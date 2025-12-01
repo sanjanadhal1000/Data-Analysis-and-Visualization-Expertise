@@ -1,0 +1,69 @@
+------------------------------
+1. What is Linear Regression?
+------------------------------
+
+- Predicts a continuous numerical value.
+- Models the relationship between input/feature (X) and output/target (Y), by drawing the "best fitting straight line".
+
+----------------------
+2. The Line Equation:
+----------------------
+
+- Linear Regression Line:
+
+                y = mX + c 
+
+    where 
+    m = slope
+    c = intercept
+    X = input
+    y = predicted output
+
+-----------------------
+3. What is Slope (m)?
+-----------------------
+
+- Tells us how much y changes when X increases by 1 unit.
+- Example: If slope(m) = 2, When X increases by 1 unit, y increases by 2.
+- Measures strength and direction of the relationship.
+    > Positive Slope: y increases when X increases.
+    > Negative Slope: y decreases when X increases.
+    > Zero Slope: No relationship.
+
+-------------------------
+4. What is intercept(c)?
+-------------------------
+
+- Value of y when X = 0.
+- Graphically, it is where the line cuts the y-axis.
+
+------------------------------
+5. Goal of Linear Regression:
+------------------------------
+
+- Find the best slope (m) and the best intercept (c) such that the lines fit the data points as closely as possible.
+
+------------------------------------------
+6. What is Cost Function (Loss Function)?
+------------------------------------------
+
+- To find the best line, we need to measure how bad our predictions are.
+- We use Mean Squared Error (MSE):
+
+                Cost =  ​(1/n) (i=1)∑(n) {(yi - yi(cap​))**2}
+
+        Where:
+            yi = actual value.
+            yi(cap) = predicted value
+            n = no. of samples
+
+- We square the error to avoid negative values cancelling out, and punishing bigger erros more.
+
+-------------------------
+7. How to Minimize Cost?
+-------------------------
+
+- Model tries diff. values of m and c and finds the combination that gives minimum cost.
+- Done using Gradient Descent Algorithm.
+- GDA calculates cost of slope function, moves step-by-step in the direction that reduces error, continues until reaching the minimum error.
+- Linear Regression: y=mX+c has the minimum MSE.

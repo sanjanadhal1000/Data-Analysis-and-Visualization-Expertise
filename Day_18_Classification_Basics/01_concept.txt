@@ -1,0 +1,144 @@
+---------------------------
+1. What is Classification?
+---------------------------
+
+> When the output variable is categorical, not a number.
+> Examples:
+    - Email -> Spam or not
+    - Tumor -> benign or malignant
+    - Customer -> will buy or won't buy
+    - Digit -> 0 to 9
+
+> Predicts labels, not continuous values.
+
+--------------------------------------
+2. Logistic Regression (Concept Only):
+--------------------------------------
+
+> It's called logistic as it uses a logistic or sigmoid function.
+> Predicts a probability,, then converts it into a class.
+    - If probability >= 0.5, class = 1 
+    - If probability < 0.5, class = 0
+
+> Sigmoid function squashes any value to between 0 and 1.
+
+    σ(z) = 1/(1+e^-z)
+
+    If z is large, output close to 1
+    If z is small, output close to 0
+
+> We use sigmoid as we need probability outputs.
+
+> Logistic Regression Pipeline:
+
+    - Compute Linear function: z = wX + b 
+    - Apply sigmoid -> convert to probability: p = σ(z)
+    - Convert probability: class label (0 to 1).
+
+> Loss Function Used: Log Loss (Cross Entropy).
+
+__________________________________________________________
+| Think of Logistic Regression as a smooth Yes/No switch. |
+| As X increases:                                         |
+|   - Low X -> probability near 0                         |
+|   - Medium X -> Uncertainty                             |
+|   - High X -> probability near 1                        |
+|                                                         |
+| So it gives a decision boundary.                        |
+|_________________________________________________________|
+
+-------------------
+3. Decision Trees:
+-------------------
+
+> DTs split the dataset based on questions like:
+    - Is Age >= 30?
+    - If salary <= 50k?
+    - Is color = Red?
+
+> At every split, the algorithm tries to create maximum purity.
+> Purity: a node where all samples belong to one class.
+> DTs repeatedly splits the data into branches until data becomes pure, or max depth is reached, or min samples are left.
+> It chooses splits using Gini Impurity and Entropy (Information Gain).
+> The tree chooses the split that best seperates the classes.
+
+> Example:
+
+    - Imagine we classify whether a person buys a phone.
+    
+                         Age < 25?
+                /          \
+            Yes             No
+         Income > 50k?      Buy = Yes
+        /          \
+      Yes          No
+Buy = Yes       Buy = No
+
+----------------------------------------------------------
+4. Differences b/w Logistic Regression and Decision Tree: 
+----------------------------------------------------------
+
+| Feature          | Logistic Regression | Decision Tree         |
+| ---------------- | ------------------- | --------------------- |
+| Type             | Linear model        | Non-linear model      |
+| Output           | Probability         | Hard rules            |
+| Visualization    | Hard                | Easy (tree)           |
+| Overfitting      | Lower               | Higher                |
+| Data requirement | Clean, numeric      | Works with categories |
+| Boundary         | Straight line       | Can be curves/splits  |
+
+LOGISTIC REGRESSION – BASICS
+----------------------------
+
+1. Why Sigmoid?
+   - Logistic Regression outputs probabilities.
+   - The sigmoid function converts any real value into a range between 0 and 1.
+   - This makes it perfect for binary classification.
+   - f(x) = 1 / (1 + e^(-x))
+
+2. Probabilities vs Classes
+   - Model predicts probability P(y=1 | x).
+   - If probability >= 0.5 → Class 1
+   - If probability < 0.5 → Class 0
+   - Threshold can be changed based on problem.
+
+3. Decision Boundary
+   - The line (or hyperplane) separating classes.
+   - For binary classification: w1*x1 + w2*x2 + b = 0
+   - Points on one side → Class 0; on the other → Class 1.
+
+4. What is Log Loss?
+   - Loss function used in Logistic Regression.
+   - Penalizes confident but wrong predictions heavily.
+   - Formula:
+     -log(y * p + (1 - y) * (1 - p))
+   - Lower log loss = better model.
+
+
+DECISION TREES – BASICS
+-----------------------
+
+1. Node, Branch, Leaf
+   - Root Node: Starting point of the tree.
+   - Decision Node: Inside node where data gets split.
+   - Branch: Path connecting nodes.
+   - Leaf Node: Final output class (or value for regression).
+
+2. Splitting Criterion
+   - Decides the best feature to split data.
+   - Classification metrics:
+     * Gini Impurity
+     * Entropy / Information Gain
+   - Regression metric:
+     * Variance Reduction
+
+3. Overfitting and Pruning
+   - Decision Trees tend to overfit on training data.
+   - Solutions:
+     * Max Depth
+     * Min Samples Split
+     * Min Samples Leaf
+     * Max Leaf Nodes
+   - Pruning:
+     * Pre-pruning → Apply restrictions while growing the tree.
+     * Post-pruning → Grow fully, then trim unnecessary branches.

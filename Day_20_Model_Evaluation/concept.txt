@@ -1,0 +1,49 @@
+Day 20 – Model Evaluation Metrics (Explained)
+
+1. Accuracy
+-----------
+Accuracy measures how many total predictions were correct.
+Formula:
+    Accuracy = Correct Predictions / Total Predictions
+
+Use when:
+    - Classes are balanced
+    - You want a general correctness score
+
+2. Precision
+------------
+Precision tells how many predictions labeled as a class were actually that class.
+Formula:
+    Precision = TP / (TP + FP)
+
+Meaning:
+    - High precision means fewer false alarms
+    - Good when false positives are costly
+
+3. Recall
+---------
+Recall tells how many actual instances of a class the model correctly detected.
+Formula:
+    Recall = TP / (TP + FN)
+
+Meaning:
+    - High recall means fewer missed cases
+    - Good when false negatives are costly
+
+4. F1-Score
+-----------
+F1-score is the harmonic mean of Precision and Recall.
+Formula:
+    F1 = 2 * (Precision * Recall) / (Precision + Recall)
+
+Meaning:
+    - Balance between precision and recall
+    - Useful when classes are imbalanced
+
+Definitions:
+------------
+TP = True Positives
+FP = False Positives
+FN = False Negatives
+
+
