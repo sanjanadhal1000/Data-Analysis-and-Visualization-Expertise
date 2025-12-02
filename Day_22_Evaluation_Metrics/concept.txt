@@ -1,0 +1,90 @@
+EVALUATION METRICS DEEP DIVE
+=============================
+
+1. ACCURACY
+-----------
+Definition:
+    Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
+Notes:
+    - Measures how many predictions model got correct overall.
+    - Works well only for balanced datasets.
+    - Not reliable for imbalanced datasets (fraud, disease detection, etc.).
+
+
+2. PRECISION
+-------------
+Definition:
+    Precision = TP / (TP + FP)
+
+Meaning:
+    Out of all predicted positives, how many were actually positive?
+
+Use When:
+    - False Positives are dangerous.
+Examples:
+    - Email spam filter.
+    - Predicting medicine effectiveness.
+
+
+3. RECALL (Sensitivity / True Positive Rate)
+---------------------------------------------
+Definition:
+    Recall = TP / (TP + FN)
+
+Meaning:
+    Out of all actual positives, how many did the model detect?
+
+Use When:
+    - False Negatives are dangerous.
+Examples:
+    - Cancer detection.
+    - Fraud detection.
+
+
+4. F1-SCORE
+-----------
+Definition:
+    F1 = 2 * (Precision * Recall) / (Precision + Recall)
+
+Notes:
+    - Harmonic mean of Precision & Recall.
+    - Best when dataset is imbalanced.
+    - Balances both Precision & Recall.
+
+
+5. ROC CURVE (Receiver Operating Characteristic)
+-------------------------------------------------
+Definition:
+    A plot between:
+        - False Positive Rate (FPR) on X-axis
+        - True Positive Rate (TPR) on Y-axis
+
+Notes:
+    - Shows trade-off between sensitivity and false alarms.
+    - Useful for binary classification.
+
+
+6. ROC-AUC SCORE
+-----------------
+Definition:
+    AUC = Area Under the ROC Curve
+
+Value Range:
+    - 1.0 => Perfect classifier
+    - 0.5 => Random classifier
+    - < 0.5 => Worse than random
+
+Notes:
+    - Higher AUC = Better model.
+    - Very important evaluation metric for binary problems.
+
+
+SUMMARY
+--------
+- Accuracy: Overall correctness.
+- Precision: How many predicted positives were correct.
+- Recall: How many actual positives were found.
+- F1-score: Balance between precision & recall.
+- ROC Curve: Visual performance at different thresholds.
+- ROC-AUC: Single score summarizing model’s separability power.
